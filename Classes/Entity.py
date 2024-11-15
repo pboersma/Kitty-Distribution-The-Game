@@ -6,10 +6,10 @@ class Entity(pg.sprite.Sprite):
             super().__init__(self.containers)
         else:
             super().__init__()
-
+        
         self.position = pg.math.Vector2(x, y)
 
-    def update(self):
+    def update(self, delta):
         pass
 
     def draw(self, screen):

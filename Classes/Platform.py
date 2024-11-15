@@ -7,7 +7,8 @@ import Classes.Entity as ent
 class Platform(ent.Entity):
     def __init__(self, x, y):
         super().__init__(x, y)
+        self.name = "PLATFORM"
 
     def draw(self, screen):
-        pg.draw.line(screen, (0, 255, 0), (0, DISPLAY_HEIGHT), (DISPLAY_WIDTH, DISPLAY_HEIGHT), 10)
+        self.rect = pg.draw.line(screen, (0, 255, 0), (0, DISPLAY_HEIGHT), (DISPLAY_WIDTH, DISPLAY_HEIGHT), 10)
 
